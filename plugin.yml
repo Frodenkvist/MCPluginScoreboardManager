@@ -1,0 +1,9 @@
+name: ScoreboardManager
+main: me.frodenkvist.scoreboardmanager.ScoreboardManager
+depend: [PVPBalance]
+version: 1.0
+description: >
+             things!
+commands:
+    sm:
+    sf:
