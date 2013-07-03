@@ -2,6 +2,7 @@ package me.frodenkvist.scoreboardmanager;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
@@ -51,7 +52,7 @@ public class HealthListener implements Listener
 		SMHandler.setHealthBar(percent, (Player)event.getEntity());
 	}
 	
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerRespawnEvent(PlayerRespawnEvent event)
 	{
 		PVPPlayer player = PvpHandler.getPvpPlayer(event.getPlayer());
