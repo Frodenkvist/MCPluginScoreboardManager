@@ -70,6 +70,8 @@ public class ScoreboardMessageListener implements PluginMessageListener
 	{
 		//Objective obj = smp.getScoreboard().getObjective(split[1]);
 		//obj
-		smp.getScoreboard().resetScores(Bukkit.getOfflinePlayer(split[1]));
+		Scoreboard sb = smp.getScoreboard();
+		sb.resetScores(Bukkit.getOfflinePlayer(split[1]));
+		smp.getPlayer().setScoreboard(sb);
 	}
 }
