@@ -1,20 +1,10 @@
 package me.frodenkvist.scoreboardmanager;
 
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerRespawnEvent;
-
-import Event.PBEntityDamageEntityEvent;
-import Event.PBEntityDamageEvent;
-import Event.PBEntityRegainHealthEvent;
-import PvpBalance.PVPPlayer;
-import PvpBalance.PvpHandler;
 
 public class HealthListener implements Listener
 {
-	@EventHandler
+	/*@EventHandler
 	public void onPBHealthRegainEvent(PBEntityRegainHealthEvent event)
 	{
 		if(event.isCancelled())
@@ -84,5 +74,5 @@ public class HealthListener implements Listener
 		percent = (1.0);
 		//Bukkit.broadcastMessage("" + percent);
 		SMHandler.setHealthBar(percent, player.getPlayer());
-	}
+	}*/
 }
